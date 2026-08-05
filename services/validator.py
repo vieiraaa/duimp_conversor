@@ -5,17 +5,14 @@ class Validator:
 
         erros=[]
 
-
         if not produto.ncm:
             erros.append(
-                "Produto sem NCM"
+                "Produto não contém NCM"
             )
-
 
         if not produto.descricao:
             erros.append(
-                "Produto sem descrição"
+                "Produto não contém descrição"
             )
-
 
         return erros
