@@ -35,5 +35,5 @@ exportador.exportar(
 )
 
 print()
-print("Excel gerado:")
+print("Documento DUIMP exportado com sucesso para o arquivo:")
 print(saida)

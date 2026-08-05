@@ -67,41 +67,32 @@ class DUIMPParser:
             )
 
             peso_liquido = numero(
-
                 self.valor(
                     item,
                     "mercadoria/pesoLiquido"
                 )
-
             )
 
             valor_unitario = numero(
-
                 self.valor(
                     item,
                     "mercadoria/valorUnitarioMoedaNegociada"
                 )
-
             )
 
             valor_total = numero(
-
                 self.valor(
                     item,
                     "condicaoVenda/valorMoedaNegociada"
                 )
-
             )
 
             lista.append(
-
                 Item(
-
                     numero_item=self.valor(
                         item,
                         "identificacao/numeroItem"
                     ),
-
                     ncm=self.valor(
                         item,
                         "produto/ncm"
@@ -139,9 +130,7 @@ class DUIMPParser:
                     valor_unitario=valor_unitario,
 
                     valor_total=valor_total
-
                 )
-
             )
 
         return lista
